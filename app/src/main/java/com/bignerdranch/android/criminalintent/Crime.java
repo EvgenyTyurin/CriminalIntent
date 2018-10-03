@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.UUID;
 
 /**
- * Created by tey on 26.07.2018.
+ * Crime class
  */
 
 public class Crime {
@@ -13,6 +13,7 @@ public class Crime {
     private String mTitle;
     private Date mDate;
     private boolean mSolved;
+    private String mSuspect;
     private boolean mRequiresPolice;
 
     public Crime() {
@@ -59,4 +60,17 @@ public class Crime {
     public void setRequiresPolice(boolean requiresPolice) {
         mRequiresPolice = requiresPolice;
     }
+
+    public String getSuspect() {
+        return mSuspect;
+    }
+
+    public void setSuspect(String suspect) {
+        mSuspect = suspect;
+    }
+
+    public String getPhotoFilename() {
+        return "IMG_" + getID().toString() + ".jpg";
+    }
+
 }

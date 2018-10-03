@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import com.bignerdranch.android.criminalintent.database.CrimeDbSchema.CrimeTable;
 
 /**
- * Created by tey on 20.08.2018.
+ * Database create and update actions
  */
 
 public class CrimeBaseHelper extends SQLiteOpenHelper {
@@ -26,7 +26,8 @@ public class CrimeBaseHelper extends SQLiteOpenHelper {
         CrimeTable.Cols.UUID + ", " +
         CrimeTable.Cols.TITLE + ", " +
         CrimeTable.Cols.DATE + ", " +
-        CrimeTable.Cols.SOLVED +
+        CrimeTable.Cols.SOLVED + "," +
+        CrimeTable.Cols.SUSPECT +
         ")");
     }
 
